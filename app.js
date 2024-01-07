@@ -38,9 +38,9 @@ const createNewTaskElement = function (taskString) {
   editInput.className = 'todo__task';
 
   editButton.innerText = 'Edit'; // innerText encodes special characters, HTML does not.
-  editButton.className = 'edit';
+  editButton.className = 'todo__edit';
 
-  deleteButton.className = 'delete';
+  deleteButton.className = 'todo__delete';
   deleteButtonImg.src = './remove.svg';
   deleteButton.appendChild(deleteButtonImg);
 
@@ -76,8 +76,8 @@ const editTask = function () {
 
   const editInput = listItem.querySelector('input[type=text]');
   const label = listItem.querySelector('label');
-  const editBtn = listItem.querySelector('.edit');
-  const containsClass = listItem.classList.contains('edit-mode');
+  const editBtn = listItem.querySelector('.todo__edit');
+  const containsClass = listItem.classList.contains('todo__edit-mode');
   // If class of the parent is .editmode
   if (containsClass) {
     // switch to .editmode
@@ -90,7 +90,7 @@ const editTask = function () {
   }
 
   // toggle .editmode on the parent.
-  listItem.classList.toggle('edit-mode');
+  listItem.classList.toggle('todo__edit-mode');
 };
 
 // Delete task.
@@ -138,8 +138,8 @@ const bindTaskEvents = function (taskListItem, checkBoxEventHandler) {
   console.log('bind list item events');
   // select ListItems children
   const checkBox = taskListItem.querySelector('input[type=checkbox]');
-  const editButton = taskListItem.querySelector('button.edit');
-  const deleteButton = taskListItem.querySelector('button.delete');
+  const editButton = taskListItem.querySelector('button.todo__edit');
+  const deleteButton = taskListItem.querySelector('button.todo__delete');
 
   // Bind editTask to edit button.
   editButton.onclick = editTask;
