@@ -16,44 +16,44 @@ body {
   text-transform: uppercase;
 }
 
-#top-section-for-adding-element-to-list {
+.todo__add-item {
   margin: 16px 0;
 }
 
-.aaa {
+.banner {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.aaa img {
+.banner img {
   width: 100%;
 }
 
-.aaa .more-inf {
+.banner .banner__more-info {
   font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
-  .aaa {
+  .banner {
     text-align: center;
   }
 }
 
-.centered-main-page-element {
+.todo {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
 
-.task {
+.todo__task {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.todo__task-wrapper {
   display: flex;
 }
 
