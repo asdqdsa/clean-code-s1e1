@@ -15,20 +15,20 @@
   </head>
 
   <body>
-    <div class="aaa">
+    <div class="banner">
       <img src="./eisenhower-matrix.jpg">
       <a
-        class="more-inf"
+        class="banner-info"
         href="https://goal-life.com/page/method/matrix-eisenhower"
       >Want more details?</a>
     </div>
-      <div class="centered-main-page-element">
-        <p id="top-section-for-adding-element-to-list">
-          <label for="new-task">Add Item</label>
-          <div class="task-row-wrapper">
+      <div class="todo">
+        <p id="todo-add-task">
+          <label for="todo-new-task">Add Item</label>
+          <div class="todo-task-wrapper">
             <input
-              id="new-task"
-              class="task"
+              id="todo-new-task"
+              class="todo-task"
               type="text"
             >
             <button>Add</button>
@@ -38,10 +38,10 @@
       <ul id="incomplete-tasks">
         <li>
           <input type="checkbox">
-          <label class="task">Pay Bills</label>
+          <label class="todo-task">Pay Bills</label>
           <input
             type="text"
-            class="task"
+            class="todo-task"
           >
           <button class="edit">Edit</button>
           <button class="delete">
@@ -50,11 +50,11 @@
         </li>
         <li class="edit-mode">
           <input type="checkbox">
-          <label class="task">Go Shopping</label>
+          <label class="todo-task">Go Shopping</label>
           <input
             type="text"
             value="Go Shopping"
-            class="task"
+            class="todo-task"
           >
           <button class="edit">Save</button>
           <button class="delete"><img src="./remove.svg">
@@ -65,8 +65,8 @@
         <ul id="completed-tasks">
           <li>
             <input type="checkbox" checked>
-            <label class="task">See the Doctor</label>
-            <input type="text" class="task">
+            <label class="todo-task">See the Doctor</label>
+            <input type="text" class="todo-task">
             <button class="edit">Edit</button>
             <button class="delete">
               <img src="./remove.svg">
