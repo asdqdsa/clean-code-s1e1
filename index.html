@@ -1,65 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <title>Todo App</title>
+    <link 
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700" 
+      rel="stylesheet"
+    >
+    <link
+      rel="stylesheet" 
+      href="style.css" 
+      media="screen" 
+      charset="utf-8"
+    >
+  </head>
 
-<head>
-  <title>Todo App</title>
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
-</head>
-
-<body>
-  <main class="page">
-    <div class="banner">
-      <img src="./eisenhower-matrix.jpg" alt="Picture of the Priority Matrix, also known as The Eisenhower Matrix">
-      <a class="banner__more-info" rel="external norefferer" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-    </div>
-    <div class="todo">
-      <div class="todo__add-item">
-        <h1>
-          <label for="new-task">Add Item</label>
-        </h1>
+  <body>
+    <header class="banner">
+      <img src="./eisenhower-matrix.jpg"
+        alt="Picture of a priority matrix, also known as The Eisenhower Matrix"
+      >
+      <a
+        class="banner__info"
+        href="https://goal-life.com/page/method/matrix-eisenhower"
+      >Want more details?</a>
+    </header>
+    <main class="todo">
+      <p id="todo-add-task">
+        <label for="todo-new-task">Add Item</label>
         <div class="todo__task-wrapper">
-          <input id="new-task" class="todo__task" type="text">
+          <input
+            id="todo-new-task"
+            class="todo__task"
+            type="text"
+          >
           <button>Add</button>
         </div>
-      </div>
-      <h2 class="todo__title">Todo</h2>
+      </p>
+      <h1>Todo</h1>
       <ul id="incomplete-tasks">
         <li>
           <input type="checkbox">
           <label class="todo__task">Pay Bills</label>
-          <input type="text" class="todo__task">
+          <input
+            type="text"
+            class="todo__task"
+          >
           <button class="todo__edit">Edit</button>
           <button class="todo__delete">
-            <img src="./remove.svg" alt="Bookmark icon with a cross inside">
+            <img src="./remove.svg"
+              alt="Bookmark icon with an x in the center"
+            >
           </button>
         </li>
         <li class="todo__edit-mode">
           <input type="checkbox">
           <label class="todo__task">Go Shopping</label>
-          <input type="text"
-          value="Go Shopping" class="todo__task">
+          <input
+            type="text"
+            value="Go Shopping"
+            class="todo__task"
+          >
           <button class="todo__edit">Save</button>
           <button class="todo__delete">
-            <img src="./remove.svg" alt="Bookmark icon with a cross inside">
+            <img src="./remove.svg"
+              alt="Bookmark icon with an x in the center"
+            >
           </button>
         </li>
-      </ul>
-      <h2 class="todo__title">Completed</h2>
-      <ul id="completed-tasks">
-        <li>
-          <input type="checkbox" checked>
-          <label class="todo__task">See the Doctor</label>
-          <input type="text" class="todo__task">
-          <button class="todo__edit">Edit</button>
-          <button class="todo__delete">
-            <img src="./remove.svg" alt="Bookmark icon with a cross inside">
-          </button>
+        </ul>
+        <h3>Completed</h3>
+        <ul id="completed-tasks">
+          <li>
+            <input type="checkbox" checked>
+            <label class="todo__task">See the Doctor</label>
+            <input type="text" class="todo__task">
+            <button class="todo__edit">Edit</button>
+            <button class="todo__delete">
+              <img src="./remove.svg"
+                alt="Bookmark icon with an x in the center"
+              >
+            </button>
         </li>
       </ul>
-    </div>
+    </main>
     <script src="app.js"></script>
-  </main>
-</body>
+  </body>
 
 </html>
